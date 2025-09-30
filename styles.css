@@ -1,0 +1,121 @@
+body {
+    background: #fcffb3;
+    /*background: radial-gradient(circle, rgba(252, 255, 179, 1) 0%, rgba(38, 56, 38, 1) 100%);*/
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 70%, black 100%), url("/assets/background-fwmc.jpg");
+    background-size: auto;
+    background-attachment: fixed;
+}
+
+h1 {
+    text-align: center;
+    font-size: 60px;
+    display: block;
+    color: white;
+}
+
+h1, p, h2 {
+    color: white;
+    text-shadow: 3px 3px 5px rgba(0,0,0,0.7);
+}
+
+h2 {
+    font-size: 30px;
+}
+
+p {
+    color: white;
+    font-size: 25px;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+img {
+    max-width: 300px;
+    margin: auto;
+    display: block;
+    border-radius: 5px;
+    padding-bottom: 100px;
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul li {
+   display: inline-block;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+nav ul li a {
+    display: block;
+    color: #000000;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+ nav ul li a:hover {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ol li {
+    display: block;
+    text-align: center;
+}
+
+ol li img {
+    max-width: 100%;
+    width: 200px;
+}
+
+.members-list img {
+    width: 300px;
+    padding-bottom: 100px;
+}
+
+.members-list {
+    text-align: center;
+}
+
+video {
+    display: block;
+    margin: 0 auto;
+}
+
+.disc li {
+    font-style: italic;
+}
+
+.headshots {
+    text-align: center;
+    font-weight: bold;
+}
+
+.headshots img {
+    padding-bottom: 0;
+}
+
+footer p{
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    margin: auto;
+    padding: 40px;
+}
+
+.dogface {
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+}

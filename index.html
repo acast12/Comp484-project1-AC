@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!-- No need for roles assistive technology can defaults header, nav, main, and footer with appropriate roles per mdn-->
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/albums.html">Discography</a></li>
+                    <li><a href="/members.html">Members</a></li>
+                    <li><a href="/extra.html">Extra</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!--This itemscope declares Fleetwood Mac as a MusicGroup.
+        The itemref attribute tells the browser that extra properties (like description and image) are defined elsewhere in the document with matching IDs (fm-desc and fm-photo).-->
+
+
+        <!--Inert attribute makes it so text cannot be copied, clicked, or focused-->
+        <main inert itemscope itemtype="https://schema.org/MusicGroup" itemref="fm-desc fm-photo">
+            <h1 itemprop="name">Fleetwood Mac</h1>
+            <!--bdi element is only useful when text can be arranged from left to right or right to left such as arabic characters-->
+            <p id="fm-desc" itemprop="description">One of my favorite bands is <bdi>Fleetwood Mac</bdi> which formed in 1967. Their music is mellow enough to not get me fatigued but also complex enough to keep me intertwined. I first fell in love with the band when I heard their song "Everywhere" which appears on their Tango in the Night album. John McVie's simplistic but catchy bass lines kept me wanting more. So much so that the song "Dreams" actually inspired me to start playing bass myself.</p>
+            <img id="fm-photo" itemprop="image" src="assets/band.jpg" alt="Fleetwood Mac group photo"> 
+            <br>
+            <p>I also became a big fan of female vocals during this time. Christine McVie and Stevie Nicks are very influential in that enticement. Their voice makes me feel like I am right there in the 70's when they first recorded some of their albums. Since then, I've been fortunate enough to listen to many female vocalists from bands like Souxsie & The Banshees, Cocteau Twins, and Shanon & The Clams.</p>
+            <div class="headshots">
+                <img src="assets/christine.jpg" alt="Christine McVie" itemprop="member">
+                <p>Christine McVie</p>
+                <img src="assets/stevie.jpg" alt="Stevie Nicks performing" itemprop="member">
+                <p>Stevie Nicks</p>
+            </div>
+            
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>
